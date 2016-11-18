@@ -5,12 +5,12 @@ namespace AddressBook.Objects
   public class contact
   {
     private string _name;
-    private int _phoneNumber;
+    private string _phoneNumber;
     private string _email;
     private int _id;
     private static List<Contact> _instances = new List<Contact> {};
 
-    public Contact(string name, int phoneNumber, string email)
+    public Contact(string name, string phoneNumber, string email)
     {
       _name = name;
       _phoneNumber = phoneNumber;
@@ -30,7 +30,7 @@ namespace AddressBook.Objects
     {
       return _phoneNumber;
     }
-    public void SetPhoneNumber(int newPhoneNumber)
+    public void SetPhoneNumber(string newPhoneNumber)
     {
       _phoneNumber = newPhoneNumber;
     }
