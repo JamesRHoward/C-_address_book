@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace AddressBook.Objects
 {
-  public class contact
+  public class Contact
   {
     private string _name;
     private string _phoneNumber;
@@ -10,12 +10,12 @@ namespace AddressBook.Objects
     private int _id;
     private static List<Contact> _instances = new List<Contact> {};
 
-    public Contact(string name, string phoneNumber, string email)
+    public Contact (string name, string phoneNumber, string email)
     {
       _name = name;
       _phoneNumber = phoneNumber;
       _email = email;
-      _id = instances.Count;
+      _id = _instances.Count;
       _instances.Add(this);
     }
     public string GetName()
@@ -26,7 +26,7 @@ namespace AddressBook.Objects
     {
       _name = newName;
     }
-    public int GetPhoneNumber()
+    public string GetPhoneNumber()
     {
       return _phoneNumber;
     }
