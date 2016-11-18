@@ -16,7 +16,7 @@ namespace AddressBook
         return View["contact_form.cshtml"];
       };
       Post["/contact"] = _ => {
-        Contact newContact = new Contact(Request.Form["contact-name"], Request.Form["contact-phone"], Request.Form["contact-email"]);
+        Contact newContact = new Contact(Request.Form["contact-name"], Request.Form["contact-phone"], Request.Form["contact-email"], Request.Form["contact-address"]);
         return View["contact_created.cshtml", newContact];
       };
       Get["/contact/{id}"] = parameters => {
