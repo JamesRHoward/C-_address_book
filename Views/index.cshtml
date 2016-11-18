@@ -5,10 +5,10 @@
 }
 @foreach (var contact in Model)
 {
-  <h3><a href="/contact/@contact.GetId()">@category.GetName()</a></h3>
+  <h3><a href="/contact/@contact.GetId()">@contact.GetName()</a></h3>
 }
 
-<a href="/contact/add">Create a new Contact</a>
+<a href="/contact/new">Create a new Contact</a>
 <form action="contacts_cleared" method="post">
   <button type="submit" name="button">Clear all contacts</button>
 </form>
