@@ -11,6 +11,7 @@ _This application is using C# to allow a user to insert information(name, phone 
 ## Setup/Installation Requirements
 
 * _Windows OS_
+* _Mono_
 * _Clone file from GitHub.com_
 * _Open Windows PowerShell_
 * _Use command >dnu restore_
